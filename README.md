@@ -75,15 +75,15 @@ mse = mean((actual_test - pred)^2)  #mse is 2.049039
 Cortez, P. and Morais, A. (2007), ‘A Data Mining Approach to Predict Forest Fires using
 Meteorological Data’.
 
-Friedman, J., Hastie, T., H¨ofling, H. and Tibshirani, R. (2007), ‘Pathwise Coordinate Optimization’, The Annals of Applied Statistics 1(2), 302–332.
+Friedman, J., Hastie, T., Höfling, H. and Tibshirani, R. (2007), ‘Pathwise Coordinate Optimization’, The *Annals of Applied Statistics* **1**(2), 302–332.
 
-Friedman, J., Hastie, T. and Tibshirani, R. (2009), The Elements of Statistical Learning,
+Friedman, J., Hastie, T. and Tibshirani, R. (2009), *The Elements of Statistical Learning*,
 second edn, New York: Springer Verlag
 
-Friedman, J., Hastie, T. and Tibshirani, R. (2010), ‘Regularized Paths for Generalized Linear Models Via Coordinate Descent’, Journal of Statistical Software 33, 1–22.
+Friedman, J., Hastie, T. and Tibshirani, R. (2010), ‘Regularized Paths for Generalized Linear Models Via Coordinate Descent’, *Journal of Statistical Software* **33**, 1–22.
 
-Hastie, T., Tibshirani, R. and Wainwright, M. (2015), Statistical Learning with Sparsity:
-The Lasso and Generalizations, first edn, Chapman & Hall/CRC.
+Hastie, T., Tibshirani, R. and Wainwright, M. (2015), *Statistical Learning with Sparsity:
+The Lasso and Generalizations*, first edn, Chapman & Hall/CRC.
 
-Tibshirani, R. (1996), ‘Regression Shrinkage and Selection via the Lasso’, Journal of the
-Royal Statistical Society. Series B (Methodological) 58(1), 267–288.
+Tibshirani, R. (1996), ‘Regression Shrinkage and Selection via the Lasso’, *Journal of the
+Royal Statistical Society. Series B (Methodological)* **58**(1), 267–288.
