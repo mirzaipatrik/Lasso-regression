@@ -20,7 +20,7 @@ set.seed(2)
 
 ```
 
-###Let's divide the data into a train- and test set
+### Let's divide the data into a train- and test set
 
 ```r
 #Index for our train data
@@ -35,10 +35,10 @@ x = model.matrix(area~., train_data)[,-1]
 y = train_data$area
 ```
 
-###Let's plot the coefficients against the L1 norm
+### Let's plot the coefficients against the L1 norm
 ![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/coefficients.png)
 
-###Now let's choose the tuning parameter lambda through cross-validation
+### Now let's choose the tuning parameter lambda through cross-validation
 
 ```r
 #Create a sequence of our tuninig parameter used in the cross validation
@@ -57,10 +57,10 @@ best_lasso = glmnet(x, y, alpha = 1, lambda = best_lam)
 
 coef(best_lasso) #Get coefficients
 ```
-###The plot displays the mean squared error using 10-fold cross validation
+### The plot displays the mean squared error using 10-fold cross validation
 ![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/cv_error.png)
 
-###Finally, let's compute the mean squared error of the test data
+### Finally, let's compute the mean squared error of the test data
 ```r
 #Predicting
 x_test = model.matrix(area~., test_data)[,-1]
