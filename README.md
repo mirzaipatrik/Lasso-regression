@@ -36,7 +36,7 @@ y = train_data$area
 ```
 
 ### Let's plot the coefficients against the L1 norm
-![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/coefficients.png)
+![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/Lasso%20Project/coefficients.png)
 
 ### Now let's choose the tuning parameter lambda through cross-validation
 
@@ -58,7 +58,7 @@ best_lasso = glmnet(x, y, alpha = 1, lambda = best_lam)
 coef(best_lasso) #Get coefficients
 ```
 ### The plot displays the mean squared error using 10-fold cross validation
-![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/cv_error.png)
+![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/Lasso%20Project/cv_error.png)
 
 ### Finally, let's compute the mean squared error of the test data
 ```r
