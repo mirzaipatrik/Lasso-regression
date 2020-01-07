@@ -36,6 +36,11 @@ y = train_data$area
 ```
 
 ### Let's plot the coefficients against the L1 norm
+```r
+#Plotting the coefficients against different values of lambda
+fit = glmnet(x, y)
+plot(fit)
+```
 ![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/Lasso%20Project/coefficients.png)
 
 ### Now let's choose the tuning parameter lambda through cross-validation
