@@ -1,4 +1,4 @@
-# Lasso-regression
+# Lasso Regression
 Regularized regression of a forest fire data supplied by [Cortez and Morais (2007)](https://www.researchgate.net/publication/238767143_A_Data_Mining_Approach_to_Predict_Forest_Fires_using_Meteorological_Data)
 
 ## Authors: Patrik Mirzai and Huixing Zhong
