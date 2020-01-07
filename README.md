@@ -3,7 +3,7 @@ Regularized regression of a forest fire data
 
 ### Authors: Patrik Mirzai and Huixing Zhong
 
-This project aims at predicting the burned area of wildfires using Lasso regression. Moreover, a comparison to Multiple regression and regression trees is also carried out. A summary of the Lasso procedure is given below. See the attached source code for full details on the project. 
+This project aims at predicting the burned area of wildfires using Lasso regression. Moreover, a comparison to Multiple regression and regression trees is also carried out. A summary of the Lasso procedure is given below. See the attached source code "Lasso implementation of wildfires data set.R" for full details on the project. 
 
 ## Upload packages and read the data set
 
