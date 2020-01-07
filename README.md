@@ -1,11 +1,11 @@
 # Lasso-regression
 Regularized regression of a forest fire data supplied by [Cortez and Morais (2007)](https://www.researchgate.net/publication/238767143_A_Data_Mining_Approach_to_Predict_Forest_Fires_using_Meteorological_Data)
 
-### Authors: Patrik Mirzai and Huixing Zhong
+## Authors: Patrik Mirzai and Huixing Zhong
 
-This project aims at predicting the burned area of wildfires using Lasso regression. Moreover, a comparison to Multiple regression and regression trees is also carried out. A summary of the Lasso procedure is given below. See the attached source code "Lasso implementation of wildfires data set.R" for full details on the project. 
+This project aims at predicting the burned area of wildfires using Lasso regression. Moreover, a comparison to multiple regression and regression trees is also carried out. A summary of the Lasso procedure is given below. See the attached source code "Lasso implementation of wildfires data set.R" for full details on the project. 
 
-## Code used for the Lasso implementation
+### Code used for the Lasso implementation
 
 ```r
 #Upload packages
@@ -20,7 +20,7 @@ set.seed(2)
 
 ```
 
-Let's divide the data into a train- and test set
+###Let's divide the data into a train- and test set
 
 ```r
 #Index for our train data
@@ -35,10 +35,10 @@ x = model.matrix(area~., train_data)[,-1]
 y = train_data$area
 ```
 
-Let's plot the coefficients against the L1 norm
+###Let's plot the coefficients against the L1 norm
 ![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/coefficients.png)
 
-Now let's choose the tuning parameter lambda through cross-validation
+###Now let's choose the tuning parameter lambda through cross-validation
 
 ```r
 #Create a sequence of our tuninig parameter used in the cross validation
@@ -57,10 +57,10 @@ best_lasso = glmnet(x, y, alpha = 1, lambda = best_lam)
 
 coef(best_lasso) #Get coefficients
 ```
-The plot displays the mean squared error using 10-fold cross validation
+###The plot displays the mean squared error using 10-fold cross validation
 ![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/cv_error.png)
 
-Finally, let's compute the mean squared error of the test data
+###Finally, let's compute the mean squared error of the test data
 ```r
 #Predicting
 x_test = model.matrix(area~., test_data)[,-1]
