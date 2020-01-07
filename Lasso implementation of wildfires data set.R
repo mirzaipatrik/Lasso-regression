@@ -55,16 +55,15 @@ mse = mean((actual_test - pred)^2)
 #------------------------
 #Linear regression  (Optional)
 
-lm_model <- lm(area ~ ., data = train_data)
-pred_lm <- predict(lm_model, newdata = test_data)
+lm_model = lm(area ~ ., data = train_data)
+pred_lm = predict(lm_model, newdata = test_data)
 
 MSE_lm = mean((pred_lm - test_data$area)^2) 
 
 #Now performing stepwise regression
 #-------------------------
 library(leaps)
-step.model <- stepAIC(lm_model, direction = "both", 
-                      trace = FALSE)
+step.model = stepAIC(lm_model, direction = "both", trace = FALSE)
 summary(step.model)
 stepwise_pred = predict(step.model, newdata = test_data)
 mse_stepwise = mean((test_data$area - stepwise_pred)^2)
@@ -74,8 +73,7 @@ library(rpart)
 library(rpart.plot)
 
 # grow tree
-fit <- rpart(area~.,
-             method="anova", data=train_data)
+fit <- rpart(area~., method="anova", data=train_data)
 
 # plot tree
 rpart.plot(fit, uniform=TRUE)
