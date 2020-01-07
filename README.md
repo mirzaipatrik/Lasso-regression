@@ -5,7 +5,7 @@ Regularized regression of a forest fire data
 
 This project aims at predicting the burned area of wildfires using Lasso regression. Moreover, a comparison to Multiple regression and regression trees is also carried out. A summary of the Lasso procedure is given below. See the attached source code "Lasso implementation of wildfires data set.R" for full details on the project. 
 
-## Upload packages and read the data set
+## Code used for the Lasso implementation
 
 ```r
 #Upload packages
@@ -69,3 +69,21 @@ pred = predict(best_lasso, x_test)
 actual_test = test_data$area
 mse = mean((actual_test - pred)^2)  #mse is 2.049039
 ```
+
+### References
+
+Cortez, P. and Morais, A. (2007), ‘A Data Mining Approach to Predict Forest Fires using
+Meteorological Data’.
+
+Friedman, J., Hastie, T., H¨ofling, H. and Tibshirani, R. (2007), ‘Pathwise Coordinate Optimization’, The Annals of Applied Statistics 1(2), 302–332.
+
+Friedman, J., Hastie, T. and Tibshirani, R. (2009), The Elements of Statistical Learning,
+second edn, New York: Springer Verlag
+
+Friedman, J., Hastie, T. and Tibshirani, R. (2010), ‘Regularized Paths for Generalized Linear Models Via Coordinate Descent’, Journal of Statistical Software 33, 1–22.
+
+Hastie, T., Tibshirani, R. and Wainwright, M. (2015), Statistical Learning with Sparsity:
+The Lasso and Generalizations, first edn, Chapman & Hall/CRC.
+
+Tibshirani, R. (1996), ‘Regression Shrinkage and Selection via the Lasso’, Journal of the
+Royal Statistical Society. Series B (Methodological) 58(1), 267–288.
