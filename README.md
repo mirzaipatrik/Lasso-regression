@@ -67,5 +67,5 @@ x_test = model.matrix(area~., test_data)[,-1]
 pred = predict(best_lasso, x_test)
 
 actual_test = test_data$area
-mse = mean((actual_test - pred)^2)
+mse = mean((actual_test - pred)^2)  #mse is 2.049039
 ```
