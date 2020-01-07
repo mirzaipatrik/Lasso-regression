@@ -36,8 +36,7 @@ y = train_data$area
 ```
 
 Let's plot the coefficients against the L1 norm
-
-
 ![grouped](https://github.com/mirzaipatrik/Lasso-regression/blob/master/coefficients.png)
 
+Now let's choose \lamdba using cross validation
 
