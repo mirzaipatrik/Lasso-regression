@@ -79,7 +79,7 @@ mse = mean((actual_test - pred)^2)  #mse is 2.049039
 
 Cortez, P. and Morais, A. (2007), ‘A Data Mining Approach to Predict Forest Fires using
 Meteorological Data’, New Trends in Artificial Intelligence, *Proceedings of the 13th EPIA
-2007 - Portuguese Conference on Artificial Intelligence* pp. 512–523..
+2007 - Portuguese Conference on Artificial Intelligence* pp. 512–523.
 
 Friedman, J., Hastie, T., Höfling, H. and Tibshirani, R. (2007), ‘Pathwise Coordinate Optimization’, *The Annals of Applied Statistics* **1**(2), 302–332.
 
