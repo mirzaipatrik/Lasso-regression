@@ -1,7 +1,7 @@
 # Lasso Regression
 Regularized regression of a forest fire data set supplied by [Cortez and Morais (2007)](https://www.researchgate.net/publication/238767143_A_Data_Mining_Approach_to_Predict_Forest_Fires_using_Meteorological_Data)
 
-## Authors: Patrik Mirzai and Huixing Zhong
+## Authors: Patrik Mirzai and Huixin Zhong
 
 This project aims at predicting the burned area of wildfires using Lasso regression. Moreover, a comparison to multiple regression and regression trees is also carried out. A summary of the Lasso procedure is given below. See the attached source code "Lasso implementation of wildfires data set.R" for full details on the project. 
 
