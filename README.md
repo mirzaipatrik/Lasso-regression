@@ -9,9 +9,8 @@ This project aims at predicting the burned area of wildfires using Lasso regress
 
 ```r
 #Upload packages
-library(readxl)  #For latex output
+library(readxl)  #For latex output (optional)
 library(glmnet)  #For Lasso regression
-library(tidyverse)  #For data manupiliation
 
 df = read.table('forestfires.csv', sep=",", header = T)
 df$area = log(df$area+1)  #Transform the variables
